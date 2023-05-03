@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="@string/display"
+            tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck,VisualLintBounds" />
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="@string/entername"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            tools:ignore="Autofill,TextFields,VisualLintTextFieldSize" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textviewDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtongenderm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genderm"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+            <RadioButton
+                android:id="@+id/radioButtongenderf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genderf"
+                tools:ignore="VisualLintButtonSize" />
+        </RadioGroup>
+
+        <ToggleButton
+            android:id="@+id/toggleButtonEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/togglebutton"
+            android:textOff="@string/disabled"
+            android:textOn="@string/enabled"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
